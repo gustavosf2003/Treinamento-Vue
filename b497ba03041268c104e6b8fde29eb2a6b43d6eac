@@ -1,0 +1,41 @@
+[33mcommit b497ba03041268c104e6b8fde29eb2a6b43d6eac[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Gustavo Ferreira <59636753+Gustavosf2003@users.noreply.github.com>
+Date:   Fri Mar 19 00:50:30 2021 -0300
+
+    Update index.html
+
+[33mcommit 95f4bee2ef0abf08e3f3a966156fdf0d69e5e627[m
+Author: Gustavo Ferreira <gsferreira2003@gmail.com>
+Date:   Fri Mar 19 00:49:09 2021 -0300
+
+    {{cliente.email}} arrumado
+
+[33mcommit 39f77f1a5542b8ac46bd67ccb1757c0d22c3a3bc[m
+Author: Gustavo Ferreira <59636753+Gustavosf2003@users.noreply.github.com>
+Date:   Fri Mar 19 00:44:09 2021 -0300
+
+    Update cliente.vue
+
+[33mcommit 91fc8cf5eeb3e0e7cbcff700d537434b4bd07ea0[m
+Author: Gustavo Ferreira <gsferreira2003@gmail.com>
+Date:   Fri Mar 19 00:41:22 2021 -0300
+
+    versao-premium
+
+[33mcommit 8e701cbb88f5216d06fb65ee5ce714bfa47ccf14[m
+Author: Gustavo Ferreira <gsferreira2003@gmail.com>
+Date:   Thu Mar 18 19:48:13 2021 -0300
+
+    segundo commit
+
+[33mcommit 430577ccdce12aa49b5e53ee8aacbbc3f25cc847[m
+Author: Gustavo Ferreira <gsferreira2003@gmail.com>
+Date:   Thu Mar 18 19:41:57 2021 -0300
+
+    primeiro commit
+
+[33mcommit c49b70d0324ae1d9dcc96831116478359d451f99[m
+Author: Gustavo Ferreira <gsferreira2003@gmail.com>
+Date:   Tue Mar 16 21:26:21 2021 -0300
+
+    init
