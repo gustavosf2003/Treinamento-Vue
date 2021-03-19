@@ -13,7 +13,7 @@
                         </p>
                         <p class="card-text" v-if="cliente.idade >=18">
                             
-                            Idade:{{cliente.idade}}
+                            Idade:{{cliente.idade.rfcrfr}}
                         </p>
                         <p class="card-text" v-else>Menor de idade</p>
 
