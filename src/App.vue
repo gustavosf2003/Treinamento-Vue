@@ -39,12 +39,14 @@ export default {
       clienteGustavo:{
         nome:"Gustavo",
         email:"gsferreira2003",
-        idade: 17
+        idade: 17,
+        isPremium:true
       },
       clienteMaria:{
         nome:"Maria",
         email:"",
-        idade: 24
+        idade: 24,
+        isPremium:false
       }
     }
     
