@@ -1,49 +1,67 @@
+//! Este componente adiciona o card de cada usuário, que as informações estão dentro do array "clientes" no App.js. 
+//! O array foi percorrido através do laço de repetição v-for e tem o nome "fim"
+
+
 <template>
 
- <div class="col-sm-4 mt-3 ">
-        <div class="card h-100 ">
+<!-- Card de usuário -->
+        <section class="card h-100 ">
             <div class=" card-body">
-                <div :class="{'cliente': !cliente.isPremium,'isPremium':cliente.isPremium}">
-                    <h4 class="card-title font-weight-bold text-monospace ">{{cliente.nome}}</h4>
+                <div >
+
+                    <!-- Classe será alterada para 'isPremium' caso o usuário possua assinatura Premium -->
+
+                    <h4 class="card-title font-weight-bold text-monospace " :class="{'cliente': !cliente.isPremium,'isPremium':cliente.isPremium}">{{cliente.nome}}</h4>
                     <hr>
                     <div class="ml-1">
-                        <p class="card-text mt-3"><span class="font-weight-bold text-monospace ">Descrição: </span>{{cliente.descricao}}
-                        <p class="card-text"><span class="font-weight-bold text-monospace">Email: 
-                            </span>{{cliente.email}}
+                        <p class="card-text mt-3"><span class="font-weight-bold text-monospace ">Descrição: </span>{{cliente.id}}
+
+
+                        <!-- Treinando o V-show -->
+                        <p class="card-text" v-show="cliente.email.length != 0">
+                            Email: {{cliente.email}}
                         </p>
+
+                         <p class="card-text" style="color:red"  v-show="cliente.email.length == 0" >
+                            
+                           <u> *Este usuário não possui email </u>
+                        </p>
+
+                        
+
+                        <!-- Treinando V-If -->
+
                         <p class="card-text" v-if="cliente.idade >=18">
                             
                             Idade:{{cliente.idade}}
                         </p>
                         <p class="card-text" v-else>Menor de idade</p>
 
-                        <p class="card-text" v-show="cliente.email.length != 0" >
+
+                        <p class="card-text" v-if="cliente.isPremium">
                             
-                            Este usuário possui email
+                            Este cliente é <u style="color:goldenrod">Premium </u>
                         </p>
-                    
+                        <p class="card-text" v-else>Este cliente não é Premium</p>
 
-                        
 
-                        
-                        
 
                     </div>
 
 
-                    <div class="row mt-2" >
-                        <div class="">
+                    <section class="row mt-2" >
+                        
                             
-                                <button type="button" class="btn btn-outline-warning btn-sm  ">
+                                <button type="button" class="btn btn-outline-warning btn-sm ml-3"  @click="abrirAlert">
                                     Editar 
                                 </button>
                             
-                        </div>
-                    </div>
+                        
+                    </section>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+  
 
  
 </template>
@@ -51,17 +69,27 @@
 <script>
 
 
+
 export default {
 
 
-
+data(){
+    return{
+    isPremium:false
+    }
+},
     
     props:{
         
         cliente:Object,
         mostrarIdade:Boolean,
-        isPremium:Boolean
         
+        
+    },
+    methods:{
+        abrirAlert: function(){
+            alert("Este alert foi aberto com a propriedade methods do Vue methods, \nquerido usuário: " + this.cliente.nome)
+        }
     }
 
 }
@@ -77,8 +105,6 @@ export default {
     
     color: goldenrod;
 }
-
-
 
 
 
