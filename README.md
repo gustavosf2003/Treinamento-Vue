@@ -1,24 +1,14 @@
 # projeto1
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
+Fiz este projeto para treinar  de Vue.js e aprendi conceitos como reatividade,etc..
+Além disso aprendi estruturas como v-if , v-for , v-show ...
+
+
+
+
+### Para rodar o projeto utilize:
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
